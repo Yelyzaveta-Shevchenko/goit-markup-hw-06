@@ -26,6 +26,9 @@
 /* #endregion  */
 
 /* #region Common */
+* {
+  outline: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #2e2f42;
@@ -779,6 +782,7 @@ button {
 }
 .footer-email-input {
   font-weight: 400;
+  font-size: 12px;
   padding-left: 16px;
   letter-spacing: 0.04em;
 
@@ -814,6 +818,11 @@ button {
 
   background: #4d5ae5;
   color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
 }
 .footer-icon {
   fill: #fff;
@@ -837,7 +846,6 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  opacity: 0.6;
 }
 @media only screen and (min-width: 768px) {
   .footer-email-input {
@@ -1019,7 +1027,7 @@ button {
   letter-spacing: 0.04em;
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  color: rgba(46, 47, 66, 0.4);
+  color: rgb(46, 47, 66);
   background-color: transparent;
 
   border-radius: 4px;
@@ -1032,7 +1040,6 @@ button {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
-  opacity: 0.5;
 }
 .textarea-input:focus {
   border-color: #4d5ae5;
